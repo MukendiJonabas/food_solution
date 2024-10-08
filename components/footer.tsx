@@ -1,7 +1,16 @@
+import Image from "next/image"
+import Logo from "@/public/logo2.jpeg"
 export default function Footer() {
   return (
     <div className="flex w-full bottom-0 bg-black">
-      <div className="text-white">
+      <div className="W-20">
+      <Image
+      src={Logo}
+      alt=""
+      className=""
+      />
+      </div>
+      <div className="text-white p-10">
         +243 997 679 336 congoliciousfoundation@gmail.com
       </div>
       <div className="text-white">

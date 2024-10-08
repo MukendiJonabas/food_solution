@@ -1,22 +1,19 @@
-import Image from "next/image";
-import photo from "./public/dev4.jpeg";
-export default function Home() {
-  return (
-    <div className="relative w-full h-screen">
-      <div className="absolute inset-0">
-        <Image
-          src={photo}
-          layout="fill"
-          objectFit="cover"
-          alt="Image de fond"
-          quality={100}
-        />
-      </div>
+import DetailSection from "@/components/detailSection";
+import Footer from "../components/footer";
+import HeroSection from "@/components/heroSection";
+import DetailSection2 from "@/components/detailsection2";
+import DetailSection3 from "@/components/detailsection3";
+import DetailSection4 from "@/components/detailsection4";
+import "./globals.css";
 
-      <div className="relative z-10 flex flex-col items-start justify-center h-full lg:px-48  text-left W-3">
-        <h1 className="text-5xl font-bold text-green-300">DigiPublic</h1>
-        <h2 className="text-4xl font-semibold text-green-400">Bienvenu(e)</h2>
-      </div>
+export default function Page() {
+  return (
+    <div>
+      <HeroSection />
+      {/* <DetailSection /> */}
+    <DetailSection2/>
+    <DetailSection3/>
+    <DetailSection4/>
     </div>
   );
 }
